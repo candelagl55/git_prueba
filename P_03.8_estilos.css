@@ -1,0 +1,122 @@
+.circulo{
+    background-color: rgb(228, 238, 235);
+    border: black solid 1px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+
+    display: flex;
+    /*lo centra verticalmente*/
+    align-items: center;
+    /*lo centra horizontalmente*/
+    justify-content: center;
+    position: relative;
+
+}
+.agujaGrande{
+    margin-bottom: 90px;
+    height: 90px;
+    border: rgb(243, 227, 0) solid 2px;
+    position: absolute;
+
+    animation-name: agujas;
+    transform-origin: bottom;
+    animation-duration: 60s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.agujaMediana{
+    margin-bottom: 70px;
+    height: 70px;
+    border: palevioletred solid 2px;
+    position: absolute;
+
+    animation-name: agujas;
+    transform-origin: bottom;
+    animation-duration: 3600s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.agujaPeque{
+    margin-bottom: 50px;
+    height: 50px;
+    border: rgb(0, 204, 255) solid 2px;
+    position: absolute;
+
+    animation-name: agujas;
+    transform-origin: bottom;
+    animation-duration: 43200s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.punto{
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+
+}
+
+@keyframes agujas{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+
+}
+/*ejercicio2*/
+.segundaAnimacion{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+
+}
+.ejer2{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border:black solid 2px;
+    position: relative;
+    margin-left: 10px;
+
+    animation-name: circulinos;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+
+
+}
+
+@keyframes circulinos{
+    from{transform: rotate(0deg);border-color: black;}
+    to{transform: rotate(90deg);border-color: rgb(179, 255, 0);}
+}
+
+/*EJERCICIO 3*/
+.tercerAnimacion{
+    margin-top: 30px;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    
+}
+.cajaMovi{
+    background-color: rgb(164, 245, 82);
+    width: 150px;
+    height: 70px;
+    animation-name: cajita;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite;
+}
+@keyframes cajita{
+    from{transform: translate(0px);opacity: 1;}
+    to{transform: translate(370px);opacity: 0;}
+
+}
+
+
+
+
+
